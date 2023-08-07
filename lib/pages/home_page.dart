@@ -44,6 +44,33 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
+    
+      body: Column(
+        children: [
+          // I want to Eat,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 36.0, vertical: 18),
+              child: Row(
+                children: const [
+                  Text(
+                      "I want to ",
+                      style: TextStyle(fontSize: 24),
+                  ),
+
+                   Text(
+                      "EAT",
+                      style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              )
+            ),
+            SizedBox(height: 24,)
+          //  tab Bar
+
+          // tab Bar view
+        ],
+      ) ,
+    
     );
   }
 }
