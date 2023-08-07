@@ -16,20 +16,30 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         leading: Padding(
           padding: const EdgeInsets.only(left: 24),
-          child: Icon(
-            Icons.menu,
-            color: Colors.grey,
-            size: 36,
+          child: IconButton(
+            icon: Icon(
+              Icons.menu,
+              color: Colors.grey,
+              size: 36,
+            ),
+            onPressed: () {
+              // open drawer
+            },
           ),
         ),
 
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 24.0),
-            child: Icon(
-              Icons.person,
-              color: Colors.grey,
-              size: 36,
+            child: IconButton(
+              icon: Icon(
+                Icons.person,
+                color: Colors.grey,
+                size: 36,
+              ),
+              onPressed: () {
+                //  account button tapped
+              },
             ),
           )
         ],
